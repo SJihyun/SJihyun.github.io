@@ -1,3 +1,7 @@
+@font-face{
+  font-family: "The wind first regular";
+  src: url("The Wind First Regular.otf") format("opentype");
+}
 html,
 body {
   font-family: 'Open Sans', sans-serif;
@@ -12,19 +16,60 @@ body {
 }
 
 .intro {
-  top: 0;
-  background-image: url("Home.jpg");
+  position: relative;
+  top: calc(15px + 1em + 25px);
+  background-image: url("Intro3.png");
   background-position: center;
   background-size: cover;
   min-height: 55vh;
   padding-top: 45vh;
 
 }
-.intro h1 {
-  vertical-align: bottom;
-}
+
 .intro h2 {
   color:white;
+}
+.about {
+  display: block;
+  margin: auto auto;
+  height: 90vh;
+  padding-top: 35vh;
+  background-image: url("Me.png");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+  
+}
+
+.about {
+  position: relative;
+}
+.Note {
+  position: absolute;
+    right: 5vw;
+    top: 285px;
+    width: 460px;
+    height: 480px;
+    padding: 18px;
+    background: url('Leaf_Note.png') no-repeat;
+    background-size: contain;
+   
+}
+.Note #first {
+  padding-top: 80px;
+}
+.Note p {
+  padding-left: 17px;
+  width: 300px;
+  text-align: left;
+  font-family: lato,sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+.passions {
+  font-family: "The wind first regular";
+  font-size: 50px;
 }
 
 nav ul {
@@ -32,6 +77,7 @@ nav ul {
   position: fixed;
   width: 100%;
   background-color: #f7f2ef;
+  z-index: 20;
 }
 
 nav ul li {
