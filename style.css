@@ -8,9 +8,19 @@
   src: url("Amourist.otf") format("opentype");
 }
 
+@font-face {
+  font-family: 'Varta';
+  src:url('Varta.ttf.woff') format('woff'),
+      url('Varta.ttf.svg#Varta') format('svg'),
+      url('Varta.ttf.eot'),
+      url('Varta.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Varta", 'Open Sans', sans-serif;
   text-align: center;
 }
 
@@ -101,7 +111,6 @@ body {
   margin-top: 90px;
   margin-bottom: 90px;
   margin-left: 30%;
-  font-family: Adelle Sans;
   font-size: 20px;
   text-align: left;
   width: 60%;
