@@ -45,43 +45,37 @@ body {
   color:white;
 }
 .about {
-  display: block;
-  margin: auto auto;
-  height: 90vh;
-  padding-top: 50vh;
-  background-image: url("Me.png");
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  min-height: 55vh;
+  padding-top: 25vh;
+  min-height: 90vh;
+  text-align: center;
 }
 
-.about {
-  position: relative;
+.about-img {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about #Me {
+    width: 550px;
 }
 
 .Note {
-  position: absolute;
-    right: 5vw;
-    top: 285px;
-    width: 460px;
-    height: 480px;
-    padding: 18px;
-    background: url('Leaf_Note.png') no-repeat;
+    margin-top: 20px;
+    width: 490px;
+    background: url('Leaf_Note2.png') no-repeat;
     background-size: contain;
-   
 }
 
 .Note #first {
-  padding-top: 80px;
+  padding-top: 200px;
 }
 
 .Note p {
-  padding-left: 17px;
-  width: 300px;
+  padding-left: 60px;
+  width: 280px;
   text-align: left;
   font-family: lato,sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: grey;
 }
 
