@@ -2,6 +2,7 @@ const sliderImages = document.querySelectorAll(".slide");
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 let currentImg = 0;
+const time = 3000;
 
 function clearImages() {
   sliderImages.forEach(img => { img.style.display = "none" })
@@ -28,6 +29,11 @@ function slideRight() {
   }
   sliderImages[currentImg + 1].style.display = "block";
   currentImg++;
+}
+
+function playImages(){
+ slideRight();
+setTimeout("playImages()", time);
 }
 
 // Left arrow click
