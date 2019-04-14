@@ -68,6 +68,14 @@ arrowLeft.addEventListener("click", slideLeft);
 // Right arrow click
 arrowRight.addEventListener("click", slideRight);
 
+document.addEventListener("keyup", event => {
+    if(event.key === "ArrowRight"){
+        slideRight();
+    }
+    if(event.key === "ArrowLeft") {
+        slideLeft();
+    }
+})
 
 
 startSlide();
