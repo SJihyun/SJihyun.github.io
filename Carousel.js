@@ -3,6 +3,7 @@ const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
 const play = document.querySelector('#play');
 const pause = document.querySelector('#pause');
+const carouselControls = document.querySelector('#carousel-controls')
 let currentImg = 0;
 const time = 2500;
 
@@ -14,6 +15,7 @@ function clearImages() {
 
 function startSlide() {
   clearImages();
+  hideControls();
   sliderImages[0].style.display = "block";
 }
 
@@ -43,17 +45,29 @@ function pauseImages(){
   clearTimeout(timer);
 }
 
-// Left arrow click
+function showControls() {
+    play.style.display = 'block';
+    pause.style.display = 'block';
+}
+
+function hideControls() {
+    play.style.display = 'none';
+    pause.style.display = 'none';
+}
+
 play.addEventListener("click", playImages);
 
-// Right arrow click
 pause.addEventListener("click", pauseImages);
 
+carouselControls.addEventListener('mouseenter', showControls);
+carouselControls.addEventListener('mouseleave', hideControls);
 
 // Left arrow click
 arrowLeft.addEventListener("click", slideLeft);
 
 // Right arrow click
 arrowRight.addEventListener("click", slideRight);
+
+
 
 startSlide();
