@@ -131,7 +131,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: green;
+  color: black;
 }
 
 @media only screen and (max-width: 500px) {
