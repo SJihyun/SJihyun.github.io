@@ -144,6 +144,9 @@ nav ul li a:hover {
 }
 
 .links {
+  border-top: 1px solid #22313F;
+  margin: 50px;
+  padding-top: 100px;
   padding-bottom: 16px;
 }
 
