@@ -1,8 +1,12 @@
 const sliderImages = document.querySelectorAll(".slide");
 const arrowLeft = document.querySelector("#arrow-left");
 const arrowRight = document.querySelector("#arrow-right");
+const play = document.querySelector('#play');
+const pause = document.querySelector('#pause');
 let currentImg = 0;
-const time = 3000;
+const time = 2500;
+
+let timer;
 
 function clearImages() {
   sliderImages.forEach(img => { img.style.display = "none" })
@@ -32,9 +36,19 @@ function slideRight() {
 }
 
 function playImages(){
- slideRight();
-setTimeout("playImages()", time);
+  slideRight();
+  timer = setTimeout("playImages()", time);
 }
+function pauseImages(){
+  clearTimeout(timer);
+}
+
+// Left arrow click
+play.addEventListener("click", playImages);
+
+// Right arrow click
+pause.addEventListener("click", pauseImages);
+
 
 // Left arrow click
 arrowLeft.addEventListener("click", slideLeft);
