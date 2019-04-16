@@ -110,6 +110,28 @@ body {
   width: 60%;
 }
 
+#CarouselTitle {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-color: #f7f2ef;
+}
+
+#CarouselTitle-content {
+  position: absolute;
+  right: 0;
+  margin-right: 50px;
+  font-family: "The wind first regular";
+  font-size: 50px;
+}
+
+#CarouselTitle img {
+  height: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  vertical-align: middle;
+}
+
 nav ul {
   text-align: right;
   position: fixed;
