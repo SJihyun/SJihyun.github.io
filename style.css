@@ -93,10 +93,10 @@ body {
 
 .Applying #title {
   font-family: "Amourist";
-  font-size: 90px;
+  font-size: 95px;
   float: left;
   width: 30%;
-  margin-top: 90px;
+  margin-top: 200px;
   margin-bottom: 90px;
   margin-left: 5%;
   
@@ -105,9 +105,9 @@ body {
 .Applying #text {
   margin-top: 90px;
   margin-bottom: 90px;
-  margin-left: 30%;
+  margin-left: 35%;
   font-size: 20px;
-  text-align: left;
+  text-align: justify;
   width: 60%;
 }
 
