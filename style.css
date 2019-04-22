@@ -82,7 +82,7 @@ body {
 .passions {
   font-family: "The wind first regular";
   font-size: 50px;
-  color: black;
+  color: grey;
 }
 
 .Applying {
@@ -99,7 +99,6 @@ body {
   margin-top: 200px;
   margin-bottom: 90px;
   margin-left: 5%;
-  
 }
 
 .Applying #text {
@@ -149,12 +148,12 @@ nav ul li {
 }
 
 nav ul li a {
-  color: grey;
+  color: black;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: black;
+  color: grey;
 }
 
 @media only screen and (max-width: 500px) {
