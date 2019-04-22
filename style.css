@@ -209,6 +209,31 @@ nav ul li a:hover {
   color: black;
 }
 
+#ThankYou {
+  background: url("ThankYou2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+#ThankYouText {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f7f2ef;
+  color: black;
+  visibility: hidden;
+  font-family: "The Wind First Regular";
+  font-size: 50px;
+  padding-top: 30vh;
+}
+#ThankYou:hover #ThankYouText {
+  visibility: visible;
+  opacity: .9;
+}
 #Instagram {
   font-family: "The wind first regular";
   font-size: 60px;
