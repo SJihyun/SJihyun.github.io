@@ -191,13 +191,12 @@ nav ul li a:hover {
 .links {
   border-top: 1px solid #22313F;
   margin: 50px;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 16px;
 }
 
 .links img {
   width: 280px;
-
 }
 
 .links-details {
@@ -232,13 +231,22 @@ nav ul li a:hover {
   color: black;
 }
 
+#ThankYou-section {
+  border-top: 1px solid #22313F;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: 80vh;
+  padding-top: 15vh;
+}
+
 #ThankYou {
-  background: url("ThankYou2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
   position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#ThankYouImg {
+  width: 100%;
 }
 #ThankYouText {
   position: absolute;
@@ -247,11 +255,13 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   background: #f7f2ef;
-  color: black;
   visibility: hidden;
-  font-family: "The Wind First Regular";
+  font-size: 20px;
+  padding-top: 15vh;
+}
+#fontThankYou {
   font-size: 50px;
-  padding-top: 30vh;
+  font-family: "Above the Beyond Script";
 }
 #ThankYou:hover #ThankYouText {
   visibility: visible;
@@ -272,19 +282,6 @@ nav ul li a:hover {
   margin-top: 75px;
   margin-bottom: 75px;
   vertical-align: middle;
-}
-
-#instafeed{
-  list-style:none;  
-  padding-top: 30px;
-  margin: 0 auto;
-  width: 1080px;
-}
-
-#instafeed img{
-  width: 250px;
-  margin: 10px;
-  max-height:100%;
 }
 
 #Instagram-section {
