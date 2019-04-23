@@ -196,11 +196,12 @@ nav ul li a:hover {
 .ToTop {
   font-family: "Amourist";
   font-size: 30px;
-  float: right;
   margin-right: 30px;
   z-index: 99;
   width: 80px;
-  margin-bottom: 0px;
+  position: absolute;
+  right: 50px;
+  padding-top: 30px;
 }
 
 .ToTop a {
@@ -238,6 +239,18 @@ nav ul li a:hover {
   font-size: 60px;
   width: 40%;
 }
+
+#Instagram a {
+  text-decoration:none;
+  color: black;
+}
+#Instagram img {
+  height: 50px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  vertical-align: middle;
+}
+
 #instafeed{
   list-style:none;  
   padding-top: 30px;
@@ -254,7 +267,7 @@ nav ul li a:hover {
 #Instagram-section {
   background: #f7f2ef;
   color: black;
-  height: 500px;
+  height: 200px;
 }
 
 footer {
